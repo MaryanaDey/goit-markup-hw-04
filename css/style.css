@@ -90,9 +90,9 @@ a {
 
 .nav-list .item:hover,
 .nav-list .item:focus,
+.nav-list .item .current,
 .auth-list .item:hover,
-.auth-list .item:focus,
-.nav-list .item .current {
+.auth-list .item:focus{
   color: var(--pretty-color);
 }
 
