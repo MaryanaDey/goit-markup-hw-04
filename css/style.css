@@ -599,7 +599,7 @@ a {
 .icon-team .icon:hover {
   fill: var(--while-color);
 }
-
+ 
 .card .icon-team  {
   display: flex;
   margin: 0 auto;
@@ -642,8 +642,15 @@ a {
   background-color:var(--pretty-color);
 }
 
+
 .footer-icon li{
-  background-color: rgba(255, 255, 255, 0.1);;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+display: flex;
+margin: 0 auto;
+padding: 0;
 }
 
 .icon-team .icon {
