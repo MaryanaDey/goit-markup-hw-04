@@ -62,7 +62,7 @@ a {
 }
 
 .contanier {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -116,7 +116,6 @@ a {
 
 /* BTN */
 .btn {
-  margin-right: 8px;
   padding: 6px 22px;
   color: var(--black-color);
 
@@ -130,7 +129,11 @@ a {
   background: var(--light-color);
   border-radius: 4px;
   border: none;
-}
+} 
+ 
+.nav-list-btn :not(:last-child){
+  margin-right: 8px;
+} 
 
 .btn:focus,
 .btn:hover {
@@ -160,6 +163,8 @@ a {
 }
 
 .auth-list .item {
+  display: flex;
+  align-items: center;
   color: var(--grey-color);
 }
 
@@ -202,6 +207,7 @@ a {
 
 .section-two {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-three {
@@ -294,28 +300,14 @@ a {
 .plate-svg,
 .planning-svg,
 .kosmo-svg {
-  /* outline: 1px solid #ff0000; */ 
   width:270px;
   height: 120px;
-  padding-left: 100px;
-  padding-top: 25px;
   margin-bottom: 30px;
+  padding: 25px 100px;
 
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-
-/* 
-.plate-svg,
-.clock-svg,
-.planning-svg,
-.kosmo .kosmo-svg {
-   width:270px; 
-  height: 120px;
-
-  background-color: #f5f4fa;
-  border-radius: 4px; 
-} */
 
 .plate .plate-svg:hover {
   fill:var(--pretty-color);
@@ -332,42 +324,7 @@ a {
 .kosmo .kosmo-svg:hover {
   fill:var(--pretty-color);
 }
-/* ПУНКТУАЛЬНОСТЬ */
 
-/*
-.feature-list .item::before {
-  content: '';
-  width: 70px;
-  height: 70px;
-  display: block;
-  
-  outline: 1px solid #ff0000;
-  margin-bottom: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}
-
-.feature-list .clock::before {
-  background-image: url(../images/my-icon/antenna.svg);
-}
-
-.feature-list .plate::before {
-  background-image: url(../images/my-icon/clock.svg);
-  background-repeat: no-repeat;
-}
-
-.feature-list .planning::before {
-  background-image: url(../images/my-icon/diagram.svg);
-}
-.feature-list .kosmo::before {
-  background-image: url(../images/my-icon/astronaut.svg);
-}
-*/
 
 .feature-list .item:nth-child(4n) {
   margin-right: 0;
@@ -385,7 +342,8 @@ a {
 .feature-list .card {
   margin-right: var(--card-set-feature);
   margin-top: 50px;
-  
+  padding-bottom: 30px;
+    
   background: var(--while-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--feature-card-shadow);
@@ -478,7 +436,7 @@ a {
 
 .card-li {
   color: var(--grey-color);
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .team {
@@ -497,9 +455,11 @@ a {
 }
 
 .grup {
+  
   color: var(--grey-color);
   padding-bottom: 20px;
   padding-left: 24px;
+  margin: 0;
   
   font-weight: normal;
   font-size: 16px;
@@ -513,7 +473,7 @@ a {
 
 .cliens {
   color: var(--black-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   
   font-weight: bold;
   font-size: 36px;
@@ -549,13 +509,15 @@ a {
 
 .my-client {
   display: flex;
-  margin-right: 30px;
+  /* margin-right: 30px; */
   width: 170px;
   height: 92px;
   
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  
+}
+.my-client:not(:last-child){
+  margin-right: 30px;
 }
 .my-client:hover {
   border-color:var(--pretty-color);
@@ -576,6 +538,7 @@ a {
 
 .footer {
   background: var(--black-color);
+  padding: 60px 0;
 }
 
 .footer-studio {
@@ -601,14 +564,8 @@ a {
   font-style: normal;
 }
 
-.footer-logo {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .join {
   display: inline-block;
-  margin-top: 72px;
   margin-bottom: 20px;
   color: var(--while-color);
   font-weight: bold;
@@ -622,7 +579,7 @@ a {
 .join-footer {
   
   margin-left: 70px;
-  margin-bottom: 100px;
+  
 }
 
 /* FOOTER */
@@ -646,12 +603,20 @@ a {
 .card .icon-team  {
   display: flex;
   margin: 0 auto;
-  /* margin-top: 30px; */
-  justify-content: center;
+
+  /* justify-content: center; */
 }
 
 .icon-team {
   display: flex;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  /* margin-top: 16px; */
+  /* justify-content: center; */
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .icon-team li:not(:last-child) {
@@ -665,7 +630,11 @@ a {
 
   background-color:var(--while-color);
   border-radius: 50%;
-  justify-content: center;
+  /* justify-content: center; */
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   align-items: center;
 }
 
@@ -678,11 +647,15 @@ a {
 }
 
 .icon-team .icon {
+  display: flex;
+  align-items: baseline;
   width: 20px;
   height: 20px;
+  margin: 0;
 }
 
 .la {
   display: flex;
+  align-items: baseline;
 }
 
