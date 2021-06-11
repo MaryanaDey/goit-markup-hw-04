@@ -509,16 +509,17 @@ a {
 
 .my-client {
   display: flex;
-  /* margin-right: 30px; */
   width: 170px;
   height: 92px;
   
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
+
 .my-client:not(:last-child){
   margin-right: 30px;
 }
+
 .my-client:hover {
   border-color:var(--pretty-color);
 }
@@ -526,7 +527,6 @@ a {
 .my-client:nth-child(6n){
   margin-bottom: 0;
 }
-
 
 /* CLIENTS */
 
@@ -547,7 +547,6 @@ a {
 
 .footer-adress {
   color: var(--while-color);
-
   margin-bottom: 9px;
   margin-top: 20px;
 
@@ -577,9 +576,7 @@ a {
 }
 
 .join-footer {
-  
   margin-left: 70px;
-  
 }
 
 /* FOOTER */
@@ -603,8 +600,6 @@ a {
 .card .icon-team  {
   display: flex;
   margin: 0 auto;
-
-  /* justify-content: center; */
 }
 
 .icon-team {
@@ -612,11 +607,11 @@ a {
   margin: 0 auto;
   padding-left: 32px;
   padding-right: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
 
   /* margin-top: 16px; */
   /* justify-content: center; */
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
 .icon-team li:not(:last-child) {
@@ -630,7 +625,6 @@ a {
 
   background-color:var(--while-color);
   border-radius: 50%;
-  /* justify-content: center; */
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 12px;
@@ -642,15 +636,14 @@ a {
   background-color:var(--pretty-color);
 }
 
-
 .footer-icon li{
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-icon {
-display: flex;
-margin: 0 auto;
-padding: 0;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .icon-team .icon {
