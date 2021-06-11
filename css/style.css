@@ -207,7 +207,7 @@ a {
 
 .section-two {
   padding-top: 94px;
-  padding-bottom: 94px;
+  
 }
 
 .section-three {
@@ -341,7 +341,7 @@ a {
 
 .feature-list .card {
   margin-right: var(--card-set-feature);
-  margin-top: 50px;
+ 
   padding-bottom: 30px;
     
   background: var(--while-color);
@@ -355,7 +355,7 @@ a {
 
 .feature-list .work {
   margin-right: var(--card-set-feature);
-  margin-top: 50px;
+  
 }
 
 .feature-list .work:nth-child(3n) {
@@ -395,7 +395,7 @@ a {
 }
 
 .portfolio-list > .item {
-  flex-basis: calc(100% / 3 - 20px);
+  /* flex-basis: calc(100% / 3 - 20px); */
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
   
@@ -409,6 +409,7 @@ a {
 
 .title {
   color: var(--black-color);
+  margin-bottom: 50px;
   
   font-size: 36px;
   line-height: 42px;
@@ -589,14 +590,13 @@ a {
   margin: 0 30px;
 }
 
-.card .icon:hover {
+/* .card .icon:hover {
   fill: var(--while-color);
-}
-
-.icon-team .icon:hover {
-  fill: var(--while-color);
-}
+} */
  
+.icon-team:hover .icon {
+  fill: #ffffff;
+}
 .card .icon-team  {
   display: flex;
   margin: 0 auto;
