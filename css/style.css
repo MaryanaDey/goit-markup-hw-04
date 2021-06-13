@@ -327,6 +327,8 @@ a {
   fill:var(--pretty-color);
 }
 
+/* ПУНКТУАЛЬНОСТЬ */
+
 
 .feature-list .item:nth-child(4n) {
   margin-right: 0;
@@ -348,7 +350,10 @@ a {
     
   background: var(--while-color);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: var(--feature-card-shadow);
+}
+
+.feature-list .card:hover {
+   box-shadow: var(--feature-card-shadow);
 }
 
 .feature-list .card:nth-child(4n) {
